@@ -1,9 +1,0 @@
-<main id="game">
-  <div
-    class="player player{{ player.walkSprite }}"
-    [ngClass]="player.looksRight ? 'characterToRight' : 'characterToLeft'"
-    [ngStyle]="{ left: player.posOx + 'px' }"
-  ></div>
-
-  <app-enemy *ngFor="let enemy of enemies" [enemy]="enemy"></app-enemy>
-</main>
